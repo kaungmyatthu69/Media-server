@@ -20,6 +20,10 @@ let userSchema = new Schema({
         type: String,
         required: true,
         unique:true
+    },
+    create:{
+        type:Date,
+        default:Date.now
     }
 })
 

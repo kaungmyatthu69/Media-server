@@ -6,11 +6,29 @@ let postSchema = new Schema({
         ref: 'user',
         required: true
     },
+    tag:{
+        type:Schema.Types.ObjectId,
+        ref:'tag',
+        required:true
+    },
+    category:{
+        type:Schema.Types.ObjectId,
+        ref:'category',
+        required:true
+    },
+    like:{
+        type:Number,
+        default:0
+    },
+    image:{
+        type:String,
+        required:true
+    },
     title: {
         type: String,
         required: true
     },
-    desc: {
+    content: {
         type: String,
         required: true
     },
